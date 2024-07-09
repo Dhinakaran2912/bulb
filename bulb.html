@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+    <title> js bulb </title>
+</head>
+<body bgcolor="beign">
+    <style>
+        body {
+          background-image: url('https://static.vecteezy.com/system/resources/previews/006/064/192/non_2x/light-bulb-on-dark-black-background-with-bokeh-vector.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: 100% 100%;
+        }
+        </style>
+<center>
+<img id="myImage" onclick="changeImage()" src="bulb_off.gif" width="100" height="180">
+</center>
+<h1 style="color:rgb(20, 121, 221)">about bulb</h1>
+<h3> <p style="color:rgb(233, 20, 31)"> -->An electric bulb refers to an electric lamp which consists of a translucent or transparent glass housing.<br> --> It is also known as a light bulb. This simple device has been used for the purpose of illumination for more than a century.<br> --> Electric bulb refers to a device which produces light on the application of electricity.</p></h3>
+ 
+<script>
+function changeImage() {
+  var image = document.getElementById('myImage');
+  if (image.src.match("bulb_on")) {
+    image.src = "bulb_off.gif";
+  } else {
+    image.src = "bulb_on.gif";
+  }
+}
+</script>
+
+</body>
+</html>
